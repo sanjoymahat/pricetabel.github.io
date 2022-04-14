@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0; 
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none; border:none;
+  text-decoration: none;
+}
+
+.container{
+  background: linear-gradient(#ddd 50%, rgb(241, 233, 235) 50.1%);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container .box-container{
+  max-width: 1200px;
+  margin:0 auto;
+  padding:20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:20px;
+}
+
+.container .box-container .box{
+  background: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.055);
+}
+
+.container .box-container .box:nth-child(2){
+  border:2px solid rgba(121, 118, 118, 0.096);
+}
+
+.container .box-container .box:nth-child(2) .btn{
+  background: rgb(23, 20, 220);
+}
+
+.container .box-container .box:nth-child(2) .btn:hover{
+  background: #444;
+}
+
+.container .box-container .box h3{
+  font-size: 30px;
+  padding:17px 0;
+  color:rgb(2, 2, 2);
+}
+h1{
+  text-align: center;
+  color: #b14ec2;
+}
+
+.container .box-container .box .price{
+  color:rgba(12, 11, 11, 0.938);
+  background: rgb(245, 240, 242);
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+.container .box-container .box .price.year{
+  display: none;
+}
+
+.container .box-container .box .list{
+  margin:20px 0;
+}
+
+.container .box-container .box .list p{
+  text-align:left;
+  padding:5px 0;
+  font-size: 16px;
+  color:rgba(4, 4, 7, 0.932);
+}
+
+.container .box-container .box .list p i{
+  padding-right: 5px;
+  color:rgba(29, 28, 28, 0.925);
+}
+
+.container .box-container .box .btn{
+  margin:20px;
+  display: block;
+  font-size: 17px;
+  background:  rgb(63, 61, 199);
+  color:#fff;
+  padding:10px;
+}
+
+.container .box-container .box .btn:hover{
+  background:#444;
+}
+
+.container .price-toggler{
+  margin-top: 0px;
+  display: inline-block;
+  padding:5px;
+  border:2px solid rgba(219, 217, 217, 0.418);
+  background: #fff;
+}
+
+.container .price-toggler span{
+  display: inline;
+  padding:10px 200px;
+  cursor: pointer;
+  color:#444;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.container .price-toggler span.active{
+  background: rgba(23, 3, 109, 0.877);
+  color:#fff;
+}
+
+@media (max-width:450px){
+  .container .box-container{
+    grid-template-columns: 1fr;
+  }
+}
+h5{
+  display: inline;
+  font-size: 20px;
+  text-align: left;
+}
+h6{
+  margin-left: 2px;
+  font-size: 20px;
+
+}
